@@ -291,14 +291,24 @@ a {
 .work {
   background: var(--primary-white-color);
 }
+.work-list:hover,
+.work-list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.work-list {
+  width: 370px;
+}
+.picture-list > .work-list {
+  margin: 0 30px 30px 0;
+}
 
-.icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-  background-size: contain;
-  content: '';
+.work-list:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.work-list:nth-child(n + 7) {
+  margin-bottom: 0px;
 }
 
 .work-name {
@@ -309,6 +319,15 @@ a {
   color: var(--title-text-color);
   margin-bottom: 4px;
 }
+.icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+  background-size: contain;
+  content: '';
+}
+
 .title {
   font-size: 16px;
   line-height: 1.87;
@@ -361,7 +380,7 @@ header {
   background-color: var(--primary-white-color);
 }
 .icons {
-  fill: #afb1b8;
+  fill: var(--primary-white-color);
 }
 .master:hover,
 .master:focus {
@@ -438,21 +457,7 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-.work-list {
-  width: 370px;
-}
 
-.picture-list > .work-list {
-  margin: 0 30px 30px 0;
-}
-
-.work-list:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.work-list:nth-child(n + 7) {
-  margin-bottom: 0px;
-}
 .welcome {
   font-weight: 700;
   font-size: 14px;
@@ -540,9 +545,5 @@ header {
 .element {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-}
-.work-list:hover,
-.work-list:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  border-top: 0px;
 }

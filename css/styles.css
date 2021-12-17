@@ -380,12 +380,13 @@ header {
   align-items: center;
   background-color: var(--primary-white-color);
 }
-.icones {
-  fill: var(--primary-white-color);
-}
 .icons {
   fill: #afb1b8;
 }
+.icones {
+  fill: var(--primary-white-color);
+}
+
 .master:hover,
 .master:focus {
   background-color: var(--accent-color);
